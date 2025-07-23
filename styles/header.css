@@ -38,15 +38,12 @@
     height: 36.5px;
     padding-left: 10px;
     font-size: 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 2px;
     box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.03);
     width: 0;
 }
 .search-bar::placeholder {
-    font-family: Roboto, Arial;
     font-size: 16px;
 }
 .search-button {
@@ -58,10 +55,43 @@
     border-color: rgb(204, 204, 204);
     margin-left: -1px;
     margin-right: 10px;
+    cursor: pointer;
+}
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icon-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
 }
 .search-icon {
     height: 25px;
-    margin-top: 4px;
 }
 .voice-search-button {
     height: 40px;
@@ -69,10 +99,10 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(248, 248, 248);
+    cursor: pointer;
 }
 .voice-search-icon {
     height: 24px;
-    margin-top: 4px;
 }
 .right-section {
     width: 180px;
@@ -84,12 +114,15 @@
 }
 .upload-icon {
     height: 24px;
+    cursor: pointer;
 }
 .youtube-apps-icon {
     height: 24px;
+    cursor: pointer;
 }
 .notifications-icon {
     height: 24px;
+    cursor: pointer;
 }
 .notifications-icon-container {
     position: relative;
@@ -100,7 +133,6 @@
     top: -2px;
     right: -5px;
     color: white;
-    font-family: Roboto, Arial;
     font-size: 11px;
     padding: 2px 5px;
     border-radius: 10px;
@@ -108,4 +140,5 @@
 .profile-icon {
     height: 32px;
     border-radius: 16px;
+    cursor: pointer;
 }

@@ -21,6 +21,9 @@ The focus was on writing clean, structured HTML and modern CSS, while also gaini
 
 ![YouTube Clone Screenshot](./screenshot.png)
 
+## Live Site
+[Live Site Url](https://you-tube-clone-eight-kappa.vercel.app/)
+
 ## Getting Started
 
 To view the project:
@@ -36,3 +39,4 @@ To view the project:
 ## Author
 
 Created by **Shina** — a Software Engineering student learning full-stack development step by step.
+
